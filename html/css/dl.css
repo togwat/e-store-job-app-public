@@ -1,0 +1,25 @@
+
+/*description list to display like a normal line of text*/
+dl {
+    margin: 0;    
+}
+
+dt {
+    display: inline-block;
+    content: " ";
+    grid-row: 1;
+}
+
+dt:after {
+    content: ":\00a0";  /*space after colon*/
+}
+
+dd {
+    display: inline;
+    margin: 0;
+}
+
+dd:after{
+    display: block;
+    content: "";
+}

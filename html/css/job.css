@@ -1,0 +1,49 @@
+.job-item {
+    width: min(80%, 1000px);
+    margin: 0 auto 20px auto;
+}
+
+/*phone width*/
+@media only screen and (min-width: 320px) and (max-width: 768px /*max screen 480px*/) {
+    .job-item-section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/*tablet width*/
+@media only screen and (min-width: 768px) and (max-width: 1224px /*max screen 1024px*/) {
+    .job-item-section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/*laptop and small screens*/
+@media only screen and (min-width: 1224px) and (max-width: 1824px) {
+    .job-item-section {
+        border: 0.5px solid;
+    
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/*large screens*/
+@media only screen and (min-width: 1824px) {
+    .job-item-section {
+        border: 0.5px solid;
+    
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+.job-item {
+    border: 1px solid;
+}
+
+.job-item-section {
+    border: 0.5px solid;
+}
+
